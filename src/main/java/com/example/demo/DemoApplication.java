@@ -15,7 +15,6 @@ public class DemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // Lógica da CLI após o Spring Boot inicializar
         Scanner scanner = new Scanner(System.in);
         CsvClient client = new CsvClient();
 

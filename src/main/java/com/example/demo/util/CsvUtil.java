@@ -20,7 +20,6 @@ public class CsvUtil {
                     .build();
             List<ClienteModel> clientes = csvToBean.parse();
     
-            // Verifique os dados lidos
             for (ClienteModel cliente : clientes) {
                 System.out.println(cliente.getNome() + " | " + cliente.getCpf() + " | " + cliente.getEmail());
             }

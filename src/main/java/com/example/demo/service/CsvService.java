@@ -21,7 +21,6 @@ public class CsvService {
         try {
             List<ClienteModel> clientes = CsvUtil.lerClientes(file.getInputStream());
 
-            // Transformação sem stream: nomes em maiúsculas
             List<ClienteModel> novosClientes = new ArrayList<>();
             for (ClienteModel c : clientes) {
                 ClienteModel novo = new ClienteModel(
